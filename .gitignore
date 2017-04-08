@@ -1,0 +1,5 @@
+#dependencies
+bower_components
+
+# temp Operative System files
+.DS_Store

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myFirstApp">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <script src="app.js"></script>
+
+    <script src="app/navbar/navbar.component.js"></script>
+    <script src="app/page/page.component.js"></script>
+    <script src="app/section-area/section.area.component.js"></script>
+    <script src="app/footer/footer.component.js"></script>
+
+    <title>My first AngularJS App</title>
+  </head>
+  <body>
+    <navbar></navbar>
+    <ui-view></ui-view>
+    <footer></footer>
+  </body>
+</html>

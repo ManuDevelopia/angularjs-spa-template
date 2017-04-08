@@ -1,0 +1,13 @@
+{
+  "name": "angularjs-spa-template",
+  "version": "1.0.0",
+  "description": "AngularJs Single Page Application Template ",
+  "main": "index.js",
+  "repository": "git@github.com:ManuDevelopia/angularjs-spa-template.git",
+  "author": "manudevelopia <manugarciarodriguez@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "browser-sync start --server --files \"**/**\""
+  }
+}
