@@ -14,7 +14,7 @@
 
     $stateProvider.state('landingPage', {
       url: '/',
-      template: '<page></page>'
+      template: '<page-view></page-view>'
     });
 
     $locationProvider.html5Mode(true);
