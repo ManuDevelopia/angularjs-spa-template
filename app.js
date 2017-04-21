@@ -10,10 +10,10 @@
   RoutesConfig.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
   function RoutesConfig($stateProvider, $urlRoutesProvider, $locationProvider) {
 
-    $urlRoutesProvider.otherwise('/');
+    $urlRoutesProvider.otherwise('/landing');
 
     $stateProvider.state('landingPage', {
-      url: '/',
+      url: '/:page',
       template: '<page-view></page-view>'
     });
 

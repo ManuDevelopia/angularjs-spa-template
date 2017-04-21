@@ -6,6 +6,7 @@
     <base href="/">
 
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -22,10 +23,8 @@
     <title>My first AngularJS App</title>
   </head>
   <body>
-    <div class="container-fluid">
-      <navbar></navbar>
-      <ui-view></ui-view>
-      <footer></footer>
-    </div>
+    <navbar></navbar>
+    <ui-view autoscroll="true"></ui-view>
+    <footer></footer>
   </body>
 </html>

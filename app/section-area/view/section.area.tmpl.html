@@ -1,5 +1,20 @@
-<div id="contact">
-  <img class="img-responsive" src="{{view.section.picture}}" alt="">
-  {{view.section.title}}
-  {{view.section.description}}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <img class="img-responsive" src="{{view.section.picture}}" alt="">
+      <div class="header_title_description">
+        <h1>{{view.section.title}} <small>{{view.section.subtitle}}</small></h1>
+        <p>{{view.section.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" ng-repeat="column in view.section.columns">
+      <h3>{{column.title}}</h3>
+      <p>{{column.description}}</p>
+    </div>
+  </div>
 </div>
