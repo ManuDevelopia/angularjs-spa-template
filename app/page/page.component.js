@@ -5,14 +5,14 @@
     .component('pageView', {
       templateUrl: 'app/page/view/page.tmpl.html',
       controllerAs: 'view',
-      controller: PageController,
+      controller: SliderController,
       bindings: {
         page: '<'
       }
     });
 
-  PageController.$inject = ['$stateParams'];
-  function PageController($stateParams){
+  SliderController.$inject = ['$stateParams'];
+  function SliderController($stateParams){
     var vm = this;
 
     vm.$onInit = function() {
@@ -41,7 +41,76 @@
               title: 'Title Col3',
               description: 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.'
             }
-          ]
+          ],
+          tabs: [
+            {
+              title: 'Tab1 Title',
+              elments: [
+                {
+                  title: 'This is my tab1 1',
+                  subtitle: 'This is my subtitle 1',
+                  description: 'This is a custom description that can be used to do things',
+                  picture: 'img/pexels-photo-57825.jpeg',
+                },
+                {
+                  title: 'This is my tab1 2',
+                  subtitle: 'This is my subtitle 1',
+                  description: 'This is a custom description that can be used to do things',
+                  picture: 'img/pexels-photo-57825.jpeg',
+                },
+                {
+                  title: 'This is my tab1 3',
+                  subtitle: 'This is my subtitle 1',
+                  description: 'This is a custom description that can be used to do things',
+                  picture: 'img/pexels-photo-57825.jpeg',
+                }
+              ]
+            },{
+              title: 'Tab2 Title',
+              elments: [
+                {
+                  title: 'This is my tab2 1',
+                  subtitle: 'This is my subtitle 1',
+                  description: 'This is a custom description that can be used to do things',
+                  picture: 'img/pexels-photo-57825.jpeg',
+                },
+                {
+                  title: 'This is my tab2 2',
+                  subtitle: 'This is my subtitle 1',
+                  description: 'This is a custom description that can be used to do things',
+                  picture: 'img/pexels-photo-57825.jpeg',
+                },
+                {
+                  title: 'This is my tab2 3',
+                  subtitle: 'This is my subtitle 1',
+                  description: 'This is a custom description that can be used to do things',
+                  picture: 'img/pexels-photo-57825.jpeg',
+                }
+              ]
+            },{
+              title: 'Tab3 Title',
+              elments: [
+                {
+                  title: 'This is my tab3 1',
+                  subtitle: 'This is my subtitle 1',
+                  description: 'This is a custom description that can be used to do things',
+                  picture: 'img/pexels-photo-57825.jpeg',
+                },
+                {
+                  title: 'This is my tab3 2',
+                  subtitle: 'This is my subtitle 1',
+                  description: 'This is a custom description that can be used to do things',
+                  picture: 'img/pexels-photo-57825.jpeg',
+                },
+                {
+                  title: 'This is my tab3 3',
+                  subtitle: 'This is my subtitle 1',
+                  description: 'This is a custom description that can be used to do things',
+                  picture: 'img/pexels-photo-57825.jpeg',
+                }
+              ]
+            },
+          ],
         },
         {
           title: 'This is my title 2',

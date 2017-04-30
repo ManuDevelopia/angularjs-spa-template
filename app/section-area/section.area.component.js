@@ -7,15 +7,14 @@
       controllerAs: 'view',
       controller: SectionController,
       bindings: {
-        section: '<'
+        section: '<',
+        tab: '<'
       }
     });
 
   SectionController.$inject = [];
   function SectionController(){
     var vm = this;
-
-
   }
 
 })();
